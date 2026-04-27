@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+.links{
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    list-style: none;
+}
+.active-link{
+    border-bottom: 1px solid black;
+}
+.btn-link{
+    padding: 0.5rem 2rem;
+    background-color: aqua;
+    border-radius: 6px;
+}

@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* body{
+    position: relative;
+}
+nav{
+    border: 1px solid black;
+    background-color: beige;
+    height: 50%;
+    width: 100%;
+    position: sticky;
+    top: 20%;
+}
+
+.parent{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+.box3{
+    background-color: rgb(83, 124, 124);
+    position: fixed;
+    right: 20%;
+    bottom: 20%;
+} */
+
+nav {
+    height: 60px;
+    position: sticky;
+    top: 0;
+    background-color: beige;
+    border: 1px solid black;
+}
+.parent1 {
+    height: 100vh;
+}
+
+.parent2 {
+    height: 150vh; /* creates scroll */
+    background-color: lightgray;
+}
+.box1, .box2, .box3 {
+    height: 100px;
+    width: 100px;
+}
+
+.box1 {
+    background-color: red;
+    position: sticky;
+    top: 0;
+
+}
+
+.box2 {
+    background-color: blue;
+}
+
+.box3 {
+    background-color: teal;
+    position: fixed;
+    right: 20%;
+    bottom: 20%;
+}
