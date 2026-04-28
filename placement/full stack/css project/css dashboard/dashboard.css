@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+   
+    /* background-color: rgb(117, 66, 0); */
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 25rem;
+    background-color: rgb(255, 212, 155);
+    /* border: 1px solid black; */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+}
+.heading{
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+}
+.links{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+    
+}
+.link,.link-1{
+    cursor: pointer;
+    line-height: 2rem;
+    padding: 0.1rem 1rem;
+}
+
+.link:hover,.link-1:hover {
+    /* color: rgb(255, 255, 255); */
+    background-color:bisque;
+    
+}
+.menus{
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+}
+.link1{
+        /* color: rgb(255, 255, 255); */
+    background-color:bisque;
+}
+
+.main-container{
+    /* height: 100%; */
+    width: calc(100% - 25rem);
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    margin-left: 25rem;
+    padding: 2rem;
+    align-items: flex-start;
+}
+img{
+    height: 200px;
+    border-radius: 10px;
+}
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+margin-bottom: 3rem;
+}
+.img11{
+    height: 400px;
+    width: 580px;
+    border: 1px solid rgb(212, 196, 196);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.section2{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 1.5rem;
+margin-bottom: 3rem;
+
+}
+.img12{
+    height: 180px;
+    width: 400px;
+}
+.division{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
