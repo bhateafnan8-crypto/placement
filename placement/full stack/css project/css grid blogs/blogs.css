@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 1.7rem 1rem;
+    /* background-color: antiquewhite; */
+}
+
+.header-container {
+    margin-bottom: 1.8rem;
+}
+
+.head-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.7rem;
+}
+
+.head-desc {
+    font-size: 1rem;
+    text-align: center;
+    max-width:65%;
+    margin: 0 auto;
+}
+@media (max-width:740px) {
+    .head-title  {
+    font-size: 1.7rem;
+    width: 86%;
+}
+
+.head-desc {
+    font-size: 0.8rem;
+}
+}
+
+@media (max-width:580px) {
+    .head-title {
+    font-size: 1.5rem;
+}
+
+.head-desc {
+    font-size: 0.7rem;
+}
+}
+@media (max-width:310px){
+    .head-title {
+    font-size: 1.4rem;
+}
+
+.head-desc {
+    font-size: 0.63rem;
+    width: 85%;
+
+}
+}
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(255, 227, 227);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.card-img-container {
+    position: relative;
+    overflow: hidden;
+    height: 7rem;
+}
+
+.card-img {
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: transform 600ms ease;
+}
+
+.card-container:hover .card-img {
+    transform: scale(1.1);
+}
+
+.card-info {
+    padding: 1.2rem 1.5rem;
+}
+
+.card-title {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+    cursor: pointer;
+}
+.card-title:hover{
+    color: blue;
+
+}
+.card-desc {
+    font-size: 0.7rem;
+    color: rgb(77, 65, 65);
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    padding-bottom: 1rem;
+    
+}
+.card-footer-profile{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+.card-footer-avatar{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+.card-footer-profile-detail{
+display: flex;
+flex-direction: column;
+
+}
+
+.profile-name{
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.publish-time{
+    font-size: 0.7rem;
+    color: rgb(77, 65, 65);
+}
+.card-footer-tag{
+font-size: 0.7rem;
+align-self: flex-end;
+border: 1px solid grey;
+padding: 0.2rem 1rem;
+border-radius: 3px;
+cursor: pointer;
+}
+.card-footer-tag:hover{
+    color: blue;
+border: 1px solid blue;
+}
